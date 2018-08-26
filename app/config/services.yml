@@ -1,0 +1,14 @@
+# Learn more about services, parameters and containers at
+# https://symfony.com/doc/current/service_container.html
+parameters:
+    #parameter_name: value
+
+services:
+    m2l.form.registration:
+        class: Wikimap\MainBundle\Form\RegistrationType
+        tags:
+            - { name: form.type, alias: wikimap_user_registration }
+    m2l.form.profile:
+        class: Wikimap\MainBundle\Form\ProfileType
+        tags:
+            - { name: form.type, alias: wikimap_user_profile }

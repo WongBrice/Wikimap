@@ -1,0 +1,13 @@
+wikimap_main_home:
+    path:     /
+    defaults:
+        _controller: WikimapMainBundle:Main:index
+    requirements:
+        page: \d*
+        
+wikimap_main_forum:
+    path:    /forum
+    defaults:
+        _controller: WikimapMainBundle:Main:forum
+    requirements:
+        page: \d+

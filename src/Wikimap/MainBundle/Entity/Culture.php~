@@ -1,0 +1,66 @@
+<?php
+
+namespace Wikimap\MainBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Culture
+ * 
+ * @ORM\Table(name="culture")
+ * @ORM\Entity(repositoryClass="Wikimap\MainBundle\Repository\CultureRepository")
+ */
+class Culture
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+    
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="name", type="string", length=255)
+     */
+    protected $name;
+    
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="period", type="string", length=255)
+     */
+    protected $period;
+    
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description", type="string", length=255)
+     */
+    protected $description;
+    
+    /**
+     * @ORM\ManyToOne(targetEntity="Wikimap\MainBundle\Entity\Pays", inversedBy="culture", cascade={"persist"})
+     * @ORM\JoinColumn(name="pays_id", referencedColumnName="id")
+     */
+    private $pays;
+    
+    public function __construct()
+    {
+        
+    }
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+}

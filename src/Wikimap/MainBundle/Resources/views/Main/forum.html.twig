@@ -1,0 +1,16 @@
+{% extends 'WikimapMainBundle::layout.html.twig' %}
+
+{% block body %}
+
+    <div class="jumbotron">
+        <div class="container">
+            {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
+                <h2>Bonjour {{ app.user.firstName }} {{ app.user.lastName }} !</h2>
+                <p>Votre session est active.</p>
+            {% else %}
+                <h2>Bienvenue sur Wikimap, le site d'échange culturel qui va rapprocher le monde !</h2>
+            {% endif %}
+        </div>
+    </div>
+
+{% endblock %}

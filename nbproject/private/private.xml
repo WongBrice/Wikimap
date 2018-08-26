@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/wamp64/www/Wikimap/src/Wikimap/MainBundle/Controller/MainController.php</file>
+            <file>file:/C:/wamp64/www/Wikimap/src/Wikimap/MainBundle/Resources/views/layout.html.twig</file>
+            <file>file:/C:/wamp64/www/Wikimap/src/Wikimap/MainBundle/Resources/views/Main/forum.html.twig</file>
+            <file>file:/C:/wamp64/www/Wikimap/src/Wikimap/MainBundle/Resources/public/css/main.css</file>
+            <file>file:/C:/wamp64/www/Wikimap/src/Wikimap/MainBundle/Resources/views/Main/index.html.twig</file>
+            <file>file:/C:/wamp64/www/Wikimap/src/Wikimap/MainBundle/Entity/Pays.php</file>
+            <file>file:/C:/wamp64/www/Wikimap/src/Wikimap/MainBundle/Entity/User.php</file>
+            <file>file:/C:/wamp64/www/Wikimap/src/Wikimap/MainBundle/Entity/Culture.php</file>
+        </group>
+    </open-files>
+</project-private>
